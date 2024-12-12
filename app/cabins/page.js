@@ -1,12 +1,23 @@
 import CabinList from "@/app/_components/CabinList";
 import { Suspense } from "react";
 import Spinner from "../_components/Spinner";
+import Filter from "../_components/Filter";
+
+//Makin the page dynamic
+//Using searchParams makes the page dynamic makin the use of revalidate pointless
+export const revalidate = 3600;
+// export const revalidate = 15;
 
 export const metadata = {
   title: "Cabins",
 };
 
-export default async function Page() {
+export default async function Page({ searchParams }) {
+  // console.log(searchParams);
+
+  const filter = searchParams?.capacity ?? "all";
+  // console.log(filter);
+
   return (
     <div>
       <h1 className="text-4xl mb-5 text-accent-400 font-medium">
@@ -21,8 +32,12 @@ export default async function Page() {
         Welcome to paradise.
       </p>
 
-      <Suspense fallback={<Spinner />}>
-        <CabinList />
+      <div className="flex justify-end mb-8">
+        <Filter />
+      </div>
+
+      <Suspense fallback={<Spinner />} key={filter}>
+        <CabinList filter={filter} />
       </Suspense>
     </div>
   );
