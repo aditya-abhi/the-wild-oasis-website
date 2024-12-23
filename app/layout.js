@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
           <main className="max-w-7xl mx-auto w-full">
             <ReservationProvider>{children}</ReservationProvider>
 
-            <SpeedInsights />
+            {/* <SpeedInsights /> */}
           </main>
         </div>
       </body>
