@@ -1,10 +1,9 @@
 "use client";
 
-import { EyeSlashIcon } from "@heroicons/react/24/solid";
-import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
+import { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
+import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "./Logo";
 
 function HamburgerMenu() {
