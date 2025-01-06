@@ -48,15 +48,19 @@ export default async function Page() {
           src={about1}
           placeholder="blur"
           quality={80}
+          style={{
+            borderRadius: "0.375rem",
+          }}
           alt="Family sitting around a fire pit in front of cabin"
         />
       </div>
 
-      <div className="sm:col-span-3 md:col-span-2">
+      <div className="sm:col-span-5 md:col-span-2">
         <Image
           src={about2}
           placeholder="blur"
           quality={80}
+          className="rounded-md"
           alt="Family sitting around a fire pit in front of cabin"
         />
       </div>
