@@ -11,6 +11,7 @@ export default function Page() {
         className="object-cover object-top"
         placeholder="blur"
         quality={80}
+        loading="lazy"
         alt="Mountains and forests with two cabins"
       />
 

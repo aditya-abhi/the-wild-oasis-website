@@ -12,6 +12,7 @@ function CabinCard({ cabin }) {
           fill
           src={image}
           alt={`Cabin ${name}`}
+          loading="lazy"
           className="object-cover border-r border-primary-800"
         />
       </div>

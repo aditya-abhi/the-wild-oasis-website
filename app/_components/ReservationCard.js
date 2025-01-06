@@ -29,6 +29,7 @@ function ReservationCard({ booking, onDelete }) {
         <Image
           src={image}
           alt={`Cabin ${name}`}
+          loading="lazy"
           fill
           className="object-cover border-r border-primary-800"
         />

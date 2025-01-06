@@ -48,6 +48,7 @@ export default async function Page() {
           src={about1}
           placeholder="blur"
           quality={80}
+          loading="lazy"
           style={{
             borderRadius: "0.375rem",
           }}
@@ -60,6 +61,7 @@ export default async function Page() {
           src={about2}
           placeholder="blur"
           quality={80}
+          loading="lazy"
           className="rounded-md"
           alt="Family sitting around a fire pit in front of cabin"
         />

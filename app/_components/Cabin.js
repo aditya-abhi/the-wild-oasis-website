@@ -12,6 +12,7 @@ function Cabin({ cabin }) {
         <Image
           src={image}
           fill
+          loading="lazy"
           className="object-cover"
           alt={`Cabin ${name}`}
         />
